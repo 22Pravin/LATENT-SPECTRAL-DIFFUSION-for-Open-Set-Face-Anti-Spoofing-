@@ -92,3 +92,39 @@ The model exhibits exceptional zero-shot domain generalization against physical 
 ├── evaluate.py             # Inference, threshold calibration, and testing script
 ├── requirements.txt        # Python dependencies
 └── README.mdm
+```
+--- 
+
+## ⚙️ Installation & Usage
+
+### 1. Clone the repository:
+
+```bash
+git clone [https://github.com/yourusername/AOPAD-Spectral-Diffusion.git](https://github.com/yourusername/AOPAD-Spectral-Diffusion.git)
+cd AOPAD-Spectral-Diffusion
+```
+
+### 2. Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Run the training script (ensure your dataset is configured in data/):
+
+```bash
+python train.py --batch_size 32 --epochs 80
+```
+
+### 4. Evaluate the model:
+
+```bash
+python evaluate.py --weights path/to/saved_model.pth
+```
+
+---
+
+## 📖 Citation
+If you find this code or methodology useful, please consider citing the baseline architecture paper:
+
+I. Bastos, A. George, S. Marcel, and A. Rocha, "Autoencoders for Open-Set Presentation Attack Detection," IEEE Transactions on Biometrics, Behavior, and Identity Science, pp. 1-1, 2026. doi: 10.1109/TBIOM.2026.3651671.
