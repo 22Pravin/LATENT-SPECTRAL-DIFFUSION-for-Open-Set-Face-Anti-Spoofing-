@@ -1,0 +1,121 @@
+{
+  "optimal_k": 2,
+  "optimal_contamination": [
+    0.14,
+    0.14
+  ],
+  "pca_components": 239,
+  "calibrated_threshold": 0.20232032299873187,
+  "val_metrics": {
+    "overall": {
+      "APCER": 0.3542582417582417,
+      "BPCER": 0.1,
+      "ACER": 0.22712912087912085,
+      "HTER": 0.22712912087912085,
+      "AUC_ROC": 0.824639536287888,
+      "EER": 0.25501373626373625,
+      "accuracy": 0.673992673992674,
+      "n_bona_fide": 910,
+      "n_attack": 7280
+    },
+    "per_attack": {
+      "Print (Indoor)": {
+        "APCER": 0.005494505494505475,
+        "AUC_ROC": 0.9967020891196715,
+        "EER": 0.02280219780219782,
+        "mean_score": 0.5835378448442136,
+        "std_score": 0.1728988572685603,
+        "n_samples": 1820,
+        "known_attack": true
+      },
+      "Print (Outdoor)": {
+        "APCER": 0.02637362637362639,
+        "AUC_ROC": 0.9846733486293926,
+        "EER": 0.07472527472527471,
+        "mean_score": 0.47682612521274215,
+        "std_score": 0.18834824160563599,
+        "n_samples": 1820,
+        "known_attack": false
+      },
+      "Screen (CCE TV)": {
+        "APCER": 0.6379120879120879,
+        "AUC_ROC": 0.6985110493901703,
+        "EER": 0.3664835164835165,
+        "mean_score": 0.19309930078306584,
+        "std_score": 0.14186794910352654,
+        "n_samples": 1820,
+        "known_attack": false
+      },
+      "Screen (HP Monitor)": {
+        "APCER": 0.7472527472527473,
+        "AUC_ROC": 0.6186716580123173,
+        "EER": 0.42829670329670333,
+        "mean_score": 0.14647745744827875,
+        "std_score": 0.08846192992779672,
+        "n_samples": 1820,
+        "known_attack": false
+      }
+    },
+    "bona_fide_stats": {
+      "mean_score": 0.11112710069527806,
+      "std_score": 0.06979079384040895,
+      "n_samples": 910
+    }
+  },
+  "test_metrics": {
+    "overall": {
+      "APCER": 0.4085336538461538,
+      "BPCER": 0.06538461538461539,
+      "ACER": 0.2369591346153846,
+      "HTER": 0.2369591346153846,
+      "AUC_ROC": 0.8146322577662721,
+      "EER": 0.26802884615384615,
+      "accuracy": 0.6295940170940171,
+      "n_bona_fide": 1040,
+      "n_attack": 8320
+    },
+    "per_attack": {
+      "Print (Indoor)": {
+        "APCER": 0.007692307692307665,
+        "AUC_ROC": 0.996951275887574,
+        "EER": 0.017788461538461562,
+        "mean_score": 0.5580630656998732,
+        "std_score": 0.17106289279574657,
+        "n_samples": 2080,
+        "known_attack": true
+      },
+      "Print (Outdoor)": {
+        "APCER": 0.07932692307692313,
+        "AUC_ROC": 0.978179548816568,
+        "EER": 0.07163461538461537,
+        "mean_score": 0.43345834794964067,
+        "std_score": 0.1918459643725956,
+        "n_samples": 2080,
+        "known_attack": false
+      },
+      "Screen (CCE TV)": {
+        "APCER": 0.6625,
+        "AUC_ROC": 0.6962328957100592,
+        "EER": 0.3798076923076923,
+        "mean_score": 0.1708537159885774,
+        "std_score": 0.12443515211850044,
+        "n_samples": 2080,
+        "known_attack": false
+      },
+      "Screen (HP Monitor)": {
+        "APCER": 0.8846153846153846,
+        "AUC_ROC": 0.5871653106508876,
+        "EER": 0.44519230769230766,
+        "mean_score": 0.11420972534585414,
+        "std_score": 0.06681999092331549,
+        "n_samples": 2080,
+        "known_attack": false
+      }
+    },
+    "bona_fide_stats": {
+      "mean_score": 0.09523173361889031,
+      "std_score": 0.06344260676545106,
+      "n_samples": 1040
+    }
+  }
+}
