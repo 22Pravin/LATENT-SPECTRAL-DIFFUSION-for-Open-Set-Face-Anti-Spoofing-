@@ -52,11 +52,13 @@ The network is optimized using a simultaneous four-part objective:
 2. **Spectral Constraint:** $$\mathcal{L}_{spec} = ||HH_{orig} - HH_{recon}||_1$$
 
 3. **Compactness (Deep SVDD):** Pulls Bona-Fide ($N_b$) samples to a centroid $c$.
+
    $$\mathcal{L}_{compact} = \frac{1}{N_b}\sum_{i=1}^{N_b}||z_i - c||_2^2$$
 
 4. **Repulsion Margin:** Forces the single known attack ($N_a$) outside a margin $m$.
-   $$\mathcal{L}_{repel} = \frac{1}{N_a}\sum_{i=1}^{N_a}\max(0, m - ||z_i^{attack} - c||_2)^2$$
 
+   $$\mathcal{L}_{repel} = \frac{1}{N_a}\sum_{i=1}^{N_a}\max(0, m - ||z_i^{attack} - c||_2)^2$$
+   
 ---
 
 ## 📊 Dataset & Protocol
