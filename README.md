@@ -129,8 +129,15 @@ python evaluate.py --weights path/to/saved_model.pth
 ---
 
 ## 📖 Citation
+
 If you find this code or methodology useful, please consider citing the baseline architecture paper:
 
 ```text
 I. Bastos, A. George, S. Marcel, and A. Rocha, "Autoencoders for Open-Set Presentation Attack Detection," IEEE Transactions on Biometrics, Behavior, and Identity Science, pp. 1-1, 2026. doi: 10.1109/TBIOM.2026.3651671.
+```
+
+The Dataset: RECOD_MPAD
+
+```text
+W. R. Almeida, F. A. Andaló, R. Padilha, G. Bertocco, W. Dias, R. da S. Torres, J. Wainer, and A. Rocha, "Detecting face presentation attacks in mobile devices with a patch-based CNN and a sensor-aware loss function," PLOS ONE, vol. 15, no. 9, e0238058, Sep. 2020. doi: 10.1371/journal.pone.0238058.
 ```
