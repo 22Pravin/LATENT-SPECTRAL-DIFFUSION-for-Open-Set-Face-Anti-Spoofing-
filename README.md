@@ -18,8 +18,7 @@ This repository contains the implementation of the **AOPAD (Autoencoder-based Op
 
 ## 🧠 System Architecture & Working Pipeline
 
-![Architecture Pipeline](images/ARC_BS.jpg)
-*(Note: Replace `images/ARC_BS.jpg` with the actual path to your architecture image in the repo)*
+![Architecture Pipeline](results/ARC_BS_page-0001.jpg)
 
 The framework processes incoming presentations through five distinct phases:
 
@@ -77,7 +76,7 @@ The model exhibits exceptional zero-shot domain generalization against physical 
 | **EER** | 23.75% |
 | **AUC-ROC** | 0.8479 |
 
-![Latent Space t-SNE](images/tsne_latent.jpg)
+![Latent Space t-SNE](results/tsne_latent.png)
 *t-SNE visualization of the bottleneck latent space. Notice the total isolation of physical print attacks (red/orange) from the genuine manifold (green).*
 
 ---
