@@ -47,12 +47,15 @@ During inference, a final anomaly score ($S_{final}$) is calculated using an ens
 
 The network is optimized using a simultaneous four-part objective:
 
-1. **Latent Constraint:** $\mathcal{L}_{latent} = ||z_0 - \hat{z}_0||_2^2$
-2. **Spectral Constraint:** $\mathcal{L}_{spec} = ||HH_{orig} - HH_{recon}||_1$
+1. **Latent Constraint:** $$\mathcal{L}_{latent} = ||z_0 - \hat{z}_0||_2^2$$
+
+2. **Spectral Constraint:** $$\mathcal{L}_{spec} = ||HH_{orig} - HH_{recon}||_1$$
+
 3. **Compactness (Deep SVDD):** Pulls Bona-Fide ($N_b$) samples to a centroid $c$.
-   $\mathcal{L}_{compact} = \frac{1}{N_b}\sum_{i=1}^{N_b}||z_i - c||_2^2$
+   $$\mathcal{L}_{compact} = \frac{1}{N_b}\sum_{i=1}^{N_b}||z_i - c||_2^2$$
+
 4. **Repulsion Margin:** Forces the single known attack ($N_a$) outside a margin $m$.
-   $\mathcal{L}_{repel} = \frac{1}{N_a}\sum_{i=1}^{N_a}\max(0, m - ||z_i^{attack} - c||_2)^2$
+   $$\mathcal{L}_{repel} = \frac{1}{N_a}\sum_{i=1}^{N_a}\max(0, m - ||z_i^{attack} - c||_2)^2$$
 
 ---
 
@@ -126,4 +129,6 @@ python evaluate.py --weights path/to/saved_model.pth
 ## 📖 Citation
 If you find this code or methodology useful, please consider citing the baseline architecture paper:
 
+```text
 I. Bastos, A. George, S. Marcel, and A. Rocha, "Autoencoders for Open-Set Presentation Attack Detection," IEEE Transactions on Biometrics, Behavior, and Identity Science, pp. 1-1, 2026. doi: 10.1109/TBIOM.2026.3651671.
+```
